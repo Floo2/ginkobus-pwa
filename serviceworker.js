@@ -22,7 +22,7 @@ var contentToCache = [
 self.addEventListener('install', (e) => {
   console.log('[Service Worker] Install');
   e.waitUntil((async () => {
-    const cache = await caches.open(cacheName);
+    const cache = await caches.open(CACHE_NAME);
     console.log('[Service Worker] Caching all: app shell and content');
     await cache.addAll(contentToCache);
   })());
@@ -75,7 +75,7 @@ self.addEventListener('fetch', (e) => {
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys().then((keyList) => {
     return Promise.all(keyList.map((key) => {
-      if (key === cacheName) { return; }
+      if (key === CACHE_NAME) { return; }
       return caches.delete(key);
     }))
   }));
