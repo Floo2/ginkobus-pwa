@@ -55,10 +55,10 @@
     }
   ],
   "start_url": "/ginkobus-pwa",
-  "background_color": "#3367D6",
+  "background_color": "#000000",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#3367D6",
+  "theme_color": "#000000",
   "orientation": "portrait",
   "description": "Ginko info app"
 }
