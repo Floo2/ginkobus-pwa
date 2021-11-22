@@ -46,6 +46,12 @@
       "src": "/ginkobus-pwa/icons/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "/ginkobus-pwa/icons/maskable_icon.png",
+      "type": "image/png",
+      "sizes": "274x274",
+      "purpose": "any maskable"
     }
   ],
   "start_url": "/ginkobus-pwa",
@@ -53,5 +59,6 @@
   "display": "standalone",
   "scope": "/",
   "theme_color": "#3367D6",
+  "orientation": "portrait",
   "description": "Ginko info app"
 }
